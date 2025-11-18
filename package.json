@@ -1,0 +1,23 @@
+{
+  "name": "dreamcode",
+  "version": "1.0.0",
+  "description": "Static version of dreamcode.ca, which is meant to succeed Framer and all Rails-based versions. It will initially be hosted on Cloudflare Pages.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radman/dreamcode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radman/dreamcode/issues"
+  },
+  "homepage": "https://github.com/radman/dreamcode#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
