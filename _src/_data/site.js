@@ -1,4 +1,4 @@
 module.exports = {
-	"cta_url": "https://calendly.com/dreamcode/intro-call",
+	"cta_url": "/#dc-calendly",
   "env": process.env.ELEVENTY_ENV || "development"
 }
