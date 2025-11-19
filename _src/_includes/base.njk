@@ -14,8 +14,16 @@
 
     {# This script tag is required to use Tailwind Plus Elements #}
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    {% if site.env == "production" %}
+      {% include "_gtm.njk" %}
+    {% endif %}
   </head>
   <body>
+    {% if site.env == "production" %}
+      {% include "_gtm_noscript.njk" %}
+    {% endif %}
+
     <div class="bg-white dark:bg-gray-900">
       {% include "../home/_header.njk" %}
 
@@ -25,5 +33,10 @@
 
       {% include "../home/_footer.njk" %}
     </div>
+    <!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/practava/30min'});return false;">Schedule time with me</a>
+<!-- Calendly link widget end -->
   </body>
 </html>
