@@ -2,4 +2,46 @@
 
 @theme {
   --font-sans: Lato, sans-serif;
+
+  --color-dreamcode-500: #46567d;
+  --color-dreamcode-600: #586a90; /* this is color on logo */
+  --color-dreamcode-700: #ffc6ac;
+
+  /* Color palette tools
+   *
+   * uicolors.app
+   * tailwindshades.com
+   * coolors.co
+   *
+   * Visualization tools
+   * realtimecolors.com
+   */
+
+  /* Generated with uicolors.app and using main color from logo */
+  --color-waikawa-gray-50: #f5f6fa;
+  --color-waikawa-gray-100: #ebedf3;
+  --color-waikawa-gray-200: #d2d7e5;
+  --color-waikawa-gray-300: #abb6ce;
+  --color-waikawa-gray-400: #7e8fb2;
+  --color-waikawa-gray-500: #586a90; /* this is logo color */
+  --color-waikawa-gray-600: #4a597f;
+  --color-waikawa-gray-700: #3c4868;
+  --color-waikawa-gray-800: #353e57;
+  --color-waikawa-gray-900: #30374a;
+  --color-waikawa-gray-950: #202431;
+
+  /* Generated with uicolors.app and using main color from blog posts */
+  --color-east-bay-50: #f4f7fa;
+  --color-east-bay-100: #e6edf3;
+  --color-east-bay-200: #d2deeb;
+  --color-east-bay-300: #b3c9dd;
+  --color-east-bay-400: #8eadcc;
+  --color-east-bay-500: #7394be;
+  --color-east-bay-600: #617daf;
+  --color-east-bay-700: #556da0;
+  --color-east-bay-800: #46567d; /* this is blog post primary color */
+  --color-east-bay-900: #3e4c6a;
+  --color-east-bay-950: #293042;
+
+
 }
