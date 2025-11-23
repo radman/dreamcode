@@ -7,16 +7,16 @@
       </a>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
-      <a href="/#process" class="header-link text-base/6 font-normal tracking-wide text-white dark:text-white">Process</a>
-      <a href="/#testimonials" class="header-link text-base/6 font-normal text-white dark:text-white">Testimonials</a>
-      <a href="/#pricing" class="header-link text-base/6 font-normal text-white dark:text-white">Pricing</a>
-      <a href="/#faqs" class="header-link text-base/6 font-normal text-white dark:text-white">FAQs</a>
+      <a href="/#process" class="header-link text-base/6 font-normal tracking-wide text-white">Process</a>
+      <a href="/#testimonials" class="header-link text-base/6 font-normal text-white">Testimonials</a>
+      <a href="/#pricing" class="header-link text-base/6 font-normal text-white">Pricing</a>
+      <a href="/#faqs" class="header-link text-base/6 font-normal text-white">FAQs</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
-      <a href="{{ site.cta_url }}" class="rounded-4xl bg-waikawa-gray-500 tracking-wide px-6 py-2.5 text-base font-normal text-white shadow-xs hover:bg-waikawa-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-waikawa-gray-500 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">Book a Call</a>
+      <a href="{{ site.cta_url }}" class="rounded-4xl bg-waikawa-gray-500 tracking-wide px-6 py-2.5 text-base font-normal text-white shadow-xs hover:bg-waikawa-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-waikawa-gray-500">Book a Call</a>
     </div>
     <div class="flex lg:hidden">
-      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-waikawa-gray-700 dark:text-waikawa-gray-400">
+      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-waikawa-gray-700">
         <span class="sr-only">Open main menu</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
           <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -27,14 +27,14 @@
   <el-dialog>
     <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
       <div tabindex="0" class="fixed inset-0 focus:outline-none">
-        <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
+        <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div class="flex items-center gap-x-6">
             <a href="/" class="-m-1.5 p-1.5">
               <span class="sr-only">Dreamcode</span>
               <img src="/assets/images/logo-dark.png" alt="" class="h-8 w-auto"/>
             </a>
-            <a href="{{ site.cta_url }}" class="dc-ensure-close-dialog ml-auto rounded-md bg-waikawa-gray-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-waikawa-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-waikawa-gray-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">Book a call</a>
-            <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-waikawa-gray-700 dark:text-waikawa-gray-400">
+            <a href="{{ site.cta_url }}" class="dc-ensure-close-dialog ml-auto rounded-md bg-waikawa-gray-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-waikawa-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-waikawa-gray-600">Book a call</a>
+            <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-waikawa-gray-700">
               <span class="sr-only">Close menu</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
                 <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
@@ -44,10 +44,10 @@
           <div class="mt-6 flow-root">
             <div class="-my-6">
               <div class="space-y-2 py-6">
-                <a href="/#process" class="dc-ensure-close-dialog -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-waikawa-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Process</a>
-                <a href="/#testimonials" class="dc-ensure-close-dialog -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-waikawa-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Testimonials</a>
-                <a href="/#pricing" class="dc-ensure-close-dialog -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-waikawa-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Pricing</a>
-                <a href="/#faqs" class="dc-ensure-close-dialog -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-waikawa-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">FAQs</a>
+                <a href="/#process" class="dc-ensure-close-dialog -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-waikawa-gray-900 hover:bg-gray-50">Process</a>
+                <a href="/#testimonials" class="dc-ensure-close-dialog -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-waikawa-gray-900 hover:bg-gray-50">Testimonials</a>
+                <a href="/#pricing" class="dc-ensure-close-dialog -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-waikawa-gray-900 hover:bg-gray-50">Pricing</a>
+                <a href="/#faqs" class="dc-ensure-close-dialog -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-waikawa-gray-900 hover:bg-gray-50">FAQs</a>
               </div>
               <script type="module">
                 const dialog = document.getElementById('mobile-menu');
