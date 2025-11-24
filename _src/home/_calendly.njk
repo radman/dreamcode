@@ -13,23 +13,15 @@
         </div>
       {% else %}
         <div class="mt-8 p-5 sm:p-0 sm:mt-0">
-          {% if false %}
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/dreamcode/intro-call" style="min-width:320px;height:700px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
-          {% else %}
-            <div id="calendly-inline-widget"></div>
+          <div id="calendly-inline-widget"></div>
 
-            <script>
-              function initCalendly() {
-                console.log('init')
-                Calendly.initInlineWidget({url: 'https://calendly.com/dreamcode/intro-call?hide_gdpr_banner=1', parentElement: document.getElementById('calendly-inline-widget'), resize: true});
-              }
-            </script>
+          <script>
+            function initCalendly() {
+              Calendly.initInlineWidget({url: 'https://calendly.com/dreamcode/intro-call?hide_gdpr_banner=1', parentElement: document.getElementById('calendly-inline-widget'), resize: true});
+            }
+          </script>
 
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async onload="initCalendly()"></script>
-          {% endif %}
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async onload="initCalendly()"></script>
         </div>
       {% endif %}
     </div>
