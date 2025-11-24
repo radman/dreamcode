@@ -1,7 +1,7 @@
-<div id="dc-calendly" class="bg-waikawa-gray-500 relative isolate -z-10 text-center pt-24 pb-0">
+<div id="dc-calendly" class="bg-waikawa-gray-500 relative isolate -z-10 text-center pt-12 sm:pt-24 pb-0">
   <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="w-full flex-auto">
-      <h2 class="mx-auto text-center font-normal tracking-normal text-balance text-white text-5xl">
+      <h2 class="mx-auto text-center font-normal tracking-normal text-balance text-white text-4xl sm:text-5xl">
         Ready to launch & scale your paid ads program? 
       </h2>
 
@@ -11,11 +11,12 @@
           <div class="calendly-inline-widget" data-url="https://calendly.com/dreamcode/intro-call" style="min-width:320px;height:700px;"></div>
           <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
           <!-- Calendly inline widget end -->
+        {% else %}
+          {# calendly placeholder #}
+          <div style="min-width:320px;min-height:700px;">
+            <img class="mx-auto" src="/assets/images/placeholders/calendly.png"/>
+          </div>
         {% endif %}
-
-        <div style="min-width:320px;height:700px;">
-          <img class="mx-auto" src="/assets/images/placeholders/calendly.png"/>
-        </div>
       </div>
     </div>
   </div>
