@@ -22,6 +22,7 @@
 
     {% if site.env == "production" %}
       {% include "_gtm.njk" %}
+      {% include "_posthog.njk" %}
     {% endif %}
   </head>
   <body>
