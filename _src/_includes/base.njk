@@ -21,15 +21,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 
     {% if site.env == "production" %}
-      {% include "_gtm.njk" %}
+      {% include "_google_tag.njk" %}
       {% include "_posthog.njk" %}
     {% endif %}
   </head>
   <body>
-    {% if site.env == "production" %}
-      {% include "_gtm_noscript.njk" %}
-    {% endif %}
-
     <div class="bg-white">
       {% include "../home/_header.njk" %}
 
